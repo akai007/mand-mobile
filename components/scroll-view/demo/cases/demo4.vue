@@ -20,17 +20,18 @@
         </div>
       </div>
     </md-scroll-view>
-    <p v-if="activeBlockIndex > 0" class="scroll-view-striky-title">{{ activeBlockIndex }}</p>
+    <p v-if="activeBlockIndex > 0" class="scroll-view-sticky-title">{{ activeBlockIndex }}</p>
   </div>
 </template>
 
-<script>import {ScrollView} from 'mand-mobile'
+<script>
+import {ScrollView} from 'mand-mobile'
 
 export default {
   name: 'scroll-view-demo-3',
   /* DELETE */
   title: '粘性标题',
-  titleEnUS: 'Stricky Title',
+  titleEnUS: 'Sticky Title',
   message: '请在移动设备中扫码预览',
   messageEnUS: 'Please scan QR code and preview on mobile device',
   /* DELETE */
@@ -76,19 +77,20 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-example-child-scroll-view-4
   position relative
   height 800px
   background #FFF
-  .scroll-view-striky-title
+  .scroll-view-sticky-title
     position absolute
     top 0
     left 0
     right 0
-  .scroll-view-category-title, .scroll-view-striky-title
+  .scroll-view-category-title, .scroll-view-sticky-title
     padding 10px 0
     text-align center
     font-size 32px
